@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0; 
+    margin: 0;
+
+    
+}
+
+header{
+    display: inline;
+}
+
+nav{
+    background-color: #b3562e;
+    padding: 5px;
+    top: 0;
+    position: sticky;
+}
+
+nav a{
+    font-weight: bold;
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+    list-style-type: none;   
+}
+
+.jumbotron{
+    font-size: 20px;
+    padding: 60px;
+    background-color: brown;
+    text-align: center;
+    color: aliceblue;
+}
+
+h2{
+    color: brown;
+}
+
+h3{
+    color: cadetblue;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+   object-position: center;
+ }
+
+.profile img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+ }
+
+
+.main{
+    padding: 20px;
+    overflow: auto;
+}
+
+
+.content{
+   float: left;
+   width: 75%;
+}
+
+aside {
+    object-position: center;
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: brown;
+    text-align: center;
+}
+
+
+.footer{
+    width:100%  ;
+
+}
+
+@media screen and (max-width:1000px){
+    #main,
+    .card,
+    .content,
+    aside{
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+ 
+
+/*
+
+Mencari Kesalahan CSS
+Salah satu cara yang paling cepat untuk memastikan bahwa CSS yang telah Anda tulis itu valid dan dapat berjalan adalah menggunakan berbagai tools online yang tersedia secara gratis. Pengecekan cukup dengan cara copy-paste kode CSS, upload berkas CSS, atau menulis alamat situs yang ingin diperiksa.
+
+Berikut beberapa opsi gratis yang tersedia.
+
+https://jigsaw.w3.org/css-validator/
+https://codebeautify.org/cssvalidate
+http://csslint.net/
+
+ 
+
+Kecilkan Ukuran CSS
+Ukuran CSS sangat penting untuk dapat dihemat karena akan mempengaruhi seberapa cepat situs Anda dapat dimuat pada browser. Cara untuk menghemat ukuran berkas CSS adalah dengan menghapus spasi atau karakter yang tidak diperlukan dari kode. Berikut contoh spasi atau karakter yang dapat dihapus:
+
+New line characters (Baris baru)
+Whitespace characters (Spasi)
+Block delimiters (Pembatas block)
+CSS comments (Komentar CSS)
+
+Perbaikan di atas dapat dilakukan secara manual namun Anda juga dapat menggunakan tools online yang dapat memperbaiki secara otomatis. Berikut beberapa opsi yang tersedia.
+
+https://cssnano.co/playground/
+https://cssminifier.com/
+https://www.minifier.org/
+*/
