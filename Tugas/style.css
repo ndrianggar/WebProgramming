@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family:'Quicksaind', sans-serif;
+    width: auto;  
+    margin: 0;
+    background-color: #F7ECDE;
+}
+nav{
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between;
+    background-color: cadetblue;
+    position: fixed;
+}
+nav a{
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+nav li{
+    display: inline-flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+
+ /* section social */
+ .socials {
+  position: relative;
+  margin-top: 2rem;
+ }
+ .socials .social-icons li{
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;  
+  display: inline-flex;
+
+ }
+ .social-icons a{
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #00d9ff;
+  background-color: #09011b;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+ }
+ .social-icons a:active,
+ .social-icons a:focus,
+ .social-icons a:hover{
+  color: #fff;
+  background-color: #f68c09;
+ }
+ .social-icons a.linkedin:hover{
+  background-color:  #007bb6;
+ }
+ .social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.social-icons a.github:hover {
+  background-color: #01080b;
+}
+.social-icons a.telegram:hover {
+  background-color: #0b81b3;
+}
+
+/*main*/
+main{
+margin: 30px 20px 60px 20px;
+float: left;
+padding-left: 100px;  
+border-width: 2px 1px 1px 2px;
+width: 70%;
+border-color: #f68c09;
+}
+
+.content{
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+
+}
+
+.home{
+  width: 75%;
+  left: 0; 
+  margin-top: 50px;
+}
+
+.about{
+  background-color: #007bb6;
+} 
+#about{
+  text-align: center;
+
+} 
+i {
+  font-size: 2rem;
+}
+span {
+    color: rgb(242, 105, 7);
+  }
+
+ /*aside image*/ 
+aside {
+  margin-top: 80px;
+    object-position: center;
+    float: right;
+    width: 25%;
+}
+.image {
+    flex: 1 1 40rem;
+    z-index: 1;
+  }
+.image img {
+    width: 60%;
+    margin-left: 6rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+.image img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+ }
+
+ img{
+  width: 150%;
+  height: 70%;
+ }
+
+/* experience section starts */
+
+.experience{
+  min-height: 90vh;
+  /* background: linear-gradient(to bottom, #57059e, #4a00e0); */
+ }
+#experience .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #experience .timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background: #020133;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 2;
+  }
+  #experience .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  /*circles on timeline*/
+  #experience .container::after {
+    content: "\f0b1";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #ff9f55;
+    top: 15px;
+    border-radius: 80%;
+    z-index: 100;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #02094b;
+    font-family: "Font Awesome\ 5 Free";
+  }
+  #experience .left {
+    left: 0;
+  }
+  #experience .right {
+    left: 50%;
+  }
+  .experience .content {
+    background-color: #f68c09;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  .experience .content .tag {
+    font-size: 1.3rem;
+    /* padding-top: 1.5rem; */
+    padding-left: 1.5rem;
+  }
+  .experience .content .desc {
+    margin-left: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .experience .content .desc h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  /*portofolio*/
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  width: 110%;
+  height: 200%;
+  margin:  10px 15px 20px 25px;
+
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  margin: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  height: 200px;
+}
+
+footer{
+  
+display: flex;
+  justify-content: center;
+  height: 40px;
+    width: 100%;
+    color:white;
+    background-color: cadetblue;
+    text-align: center;
+    
+}
+
+.clear{
+  clear: left;
+}
